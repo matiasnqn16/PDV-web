@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar/cargar prod</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/menuHead.css">
+    <script src="./scripts/bdProd.js"></script>
+    <script src="./scripts/formProd.js"></script>
+</head>
+<body onload="listarProductos()">
+    <header class="top">
+        <div id="top-menues">
+            <div class="top-izq"><img src="./img/logobn.png" alt="logo"></div>
+            <div class="top-mid">
+                <ul id="top-menu">
+                    <li><a href="./ventasLocal.html">Ventas Local</a></li>
+                    <li><a href="./despachos.html">Despachos</a></li>
+                    <li id="here"><a href="#">carga/modificacion de productos</a></li>
+                    <li><a href="./ventasDelDia.html">ventas del dia</a></li>
+                    <li><a href="./registroDeClientes.html">Agenda Clientes</a></li>
+
+                </ul>
+            </div>
+            <div class="top-der"><a class="logout" href="./inicio.html">Cerrar sesion</a></div>
+        </div>
+    </header>
+    <hr class="barraSeparadora">
+    <div class="contenido">
+        <div class="cuadro">
+            <div class="buscadorylista">
+                <div id="buscador">
+                    Buscar Prod: <input type="text" id="myInput" onkeyup="myFunction()">
+                </div>
+                <div id="lista">
+                    
+                </div>
+            </div>
+            <div class="formulario">
+                <form action="" id="formu">
+                    Id producto <span id="posId">0</span> <br>
+                    nombre <input type="text" id="txNombre"><br>
+                    categoria<input type="text" id="txCat"><br>
+                    precio <input type="text" id="txPrecio" pattern="[0-9]+"><br>
+                    imagen <input type="text" name="img" id="fileImg"><br>
+                    <a class=boton id="botonCambiante">Cargar Datos</a>
+                    <a class=boton id="botonReset">Borrar </a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

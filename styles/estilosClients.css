@@ -1,0 +1,80 @@
+.contenido {
+    position: relative;
+}
+
+.listaForm {
+    position: absolute;
+    left:1rem;
+    top: 3rem;
+    padding: 1rem;
+    background-color: GREEN;
+    border-radius: 1rem;
+    width: 50ch;
+}
+
+.cartelPestania {
+    position: absolute;
+    left: 1.2rem;
+    z-index: 3;
+    top: 1rem;
+    padding: .3rem;
+    border-radius: 1rem;
+    background-color: yellow;
+}
+
+#formulario {
+    margin: .2rem;
+    font-size: 1.3rem;
+    color:azure;
+}
+
+#formulario input{
+    margin-top: -1.3rem;
+    float: right;
+    right: .1rem;
+}
+
+#formulario a {
+    padding: .1rem;
+    border: 2px black solid;
+    font-size: 1.6rem;
+    border-radius: .5rem;
+    color: black;
+    cursor: pointer;
+    background-color: bisque;
+    transition: background-color .4s;
+}
+
+#formulario a:hover{
+    background-color: rgb(249, 126, 146);
+}
+
+.listaClients {
+    position: absolute;
+    right: 1rem;
+    top: 3rem;
+    padding: 1rem;
+    background-color: violet;
+    border-radius: 1rem;
+    width: 70ch;
+}
+
+
+/*  */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}

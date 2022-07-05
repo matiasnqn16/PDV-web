@@ -1,0 +1,131 @@
+#barraDiv {
+    color: orangered;
+    border-top: solid 5px;
+
+}
+
+.content {
+    display:flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.izq {
+    width: 69%;
+}
+
+.search {
+    height: 20px;    
+    padding: 8px;
+    margin: 2px;
+    background-color: pink;
+    border: black 2px solid;
+
+}
+
+.content {
+    display:flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.card-body{
+    padding:1em;
+    border: black solid 1px;
+    border-radius: 1rem;
+    background-color: rgba(0, 255, 255, 0.219);
+    width: 100px;
+    margin: 5px;
+    display: table;
+    float: left;
+    height: 160px;
+    text-align: center;
+}
+
+.img-fluid {
+    width: auto;
+    height: 100px;
+}
+
+.carrito {
+    margin: 2px;
+    float: right;
+    width: 33%;
+    border: black 2px solid;
+    background-color: powderblue;
+}
+
+.btn-quit {
+    border: red solid 1px;
+    background-color: red;
+    border-radius: 50px;
+    color: white;
+    font-weight: bolder;
+    font-size: .5em;
+    float: left;
+    clear: both;
+    transition: font-size .4s;
+}
+.btn-quit:hover {
+    content: "-";
+    font-size: 1rem;
+}
+
+
+.boton {
+    background-color: greenyellow;
+    border-radius: 1em;
+    font-weight: bolder;
+    font-size: 1.3em;
+    
+}
+.input {
+    border-radius: 0.5em;
+    border: 1px solid black;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1em;
+}
+
+.listaDeItems {
+    position: relative;
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: .5rem;
+}
+
+.listaDeItems b{
+    position: absolute;
+    right: 2%;
+    top: auto;
+    font-size: 1.7rem;
+}
+
+.btn {
+    background-color: beige;
+    margin: .5rem;
+    padding: .2rem;
+    border: 2px  solid black;
+    font-size: 2rem;
+    border-radius: 1rem;
+    transition: background-color .3s;
+}
+
+.btn:hover {
+    background-color: bisque;
+}
+
+
+
+.carrito h2,h3 {
+    font-size: 2rem;
+}
+
+.text-right{
+    float: right;
+    font-weight: bolder;
+    font-size: 3rem;
+}

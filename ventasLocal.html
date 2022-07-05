@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despachos</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/menuHead.css">
+    <link rel="stylesheet" href="styles/tarjetas.css">
+    <link rel="stylesheet" href="styles/baseVieja.css">
+    <script src="scripts/bdProd.js "></script>
+    <script src="scripts/lib.js"></script>
+</head>
+<body onload="">
+    <header class="top">
+        <div id="top-menues">
+            <div class="top-izq"><img src="./img/logobn.png" alt="logo"></div>
+            <div class="top-mid">
+                <ul id="top-menu">
+                    <li id="here"><a href="#">Ventas Local</a></li>
+                    <li><a href="./despachos.html">Despachos</a></li>
+                    <li><a href="./cargaModProd.html">carga/modificacion de productos</a></li>
+                    <li><a href="./ventasDelDia.html">ventas del dia</a></li>
+                    <li><a href="./registroDeClientes.html">Agenda Clientes</a></li>
+
+                </ul>
+            </div>
+            <div class="top-der"><a class="logout" href="./inicio.html">Cerrar sesion</a></div>
+        </div>
+    </header>
+    <hr class="barraSeparadora">
+    <div class="content">
+        <div class="izq">
+            <div class="search">
+                <div class="inbuscar">
+                    <form action="busqueda" style="float: left;" autocomplete="off">
+                        <input type="text" value="" id="filtrar" onkeyup="filtraAca()">
+                    </form>
+                    <form action="filtro" style="float:right;">
+                        <select name="cat" id="cat">
+                            <option value="Gaseosas">Todos</option>
+                            <option value="Cervezas">Cervezas</option>
+                            <option value="Cervezas">Gaseosas</option>
+                            <option value="Cervezas">Vinos</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <div class="lista">
+                <main id="items" class="col-sm-8 row"></main>
+
+            </div>
+        </div>
+        <div class="carrito">
+            <h3>Cliente</h3>
+            <input type="text" value="nombre cliente" >
+            <aside class="col-sm-4">
+                <h2>Su compra</h2>
+                <!-- Elementos del carrito -->
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <!-- Precio total -->
+                <p class="text-right">Total: <span id="total"></span></p>
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                <button id="boton-imprimir" class="btn">Imprimir Presupuesto</button>
+            </aside>
+            <hr>
+            <button id="finalizar-compra" class="btn">Finalizar Compra</button>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

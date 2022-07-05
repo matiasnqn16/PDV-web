@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despachos</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/menuHead.css">
+    <link rel="stylesheet" href="styles/estilosClients.css">
+    <script src="./scripts/formClients.js"></script>
+    <script src="./scripts/bdClients.js"></script>
+</head>
+<body onload="iniciarTabla()">
+    <header class="top">
+        <div id="top-menues">
+            <div class="top-izq"><img src="./img/logobn.png" alt="logo"></div>
+            <div class="top-mid">
+                <ul id="top-menu">
+                    <li><a href="./ventasLocal.html">Ventas Local</a></li>
+                    <li><a href="./despachos.html">Despachos</a></li>
+                    <li><a href="./cargaModProd.html">carga/modificacion de productos</a></li>
+                    <li><a href="./ventasDelDia.html">ventas del dia</a></li>
+                    <li id="here"><a href="#">Agenda Clientes</a></li>
+                </ul>
+            </div>
+            <div class="top-der"><a class="logout" href="./inicio.html">Cerrar sesion</a></div>
+        </div>
+    </header>
+    <hr class="barraSeparadora">
+    <div class="contenido">
+        <div class="cartelPestania">
+            <h2>Registro de clientes</h2>
+        </div>
+        <div class="listaForm">
+            <form action="" id="formulario" class="inputForm" >
+                <p>Nombre:      </p><input type="text" id="txNom" name="txNom" onkeyup="validar('txNom')" required autocomplete="off">
+                <p>Apellido:    </p><input type="text" id="txAp" name="txAp" onkeyup="validar('txAp')" required autocomplete="off">
+                <p>Direccion:   </p><input type="text" id="txDir" name="txDIr" onkeyup="validar('txDir')" required autocomplete="off">
+                <p>Fecha Nacimiento: </p><input type="text" id="fechaNac" name="fechaNac" placeholder="YYYYMMDD" maxlength="8" onkeypress="return SoloNumeros(event);" onkeyup="ValidarFecha();" autocomplete="off">
+                <p>Telefono:    </p><input type="text" name="txTel" id="txTel" onkeypress="return SoloNumeros(event);" onkeyup="validar('txTel')" required autocomplete="off">
+                <p>E-mail:      </p><input type="email" name="txEmail" id="txEmail" onkeyup="validar('txEmail')" required autocomplete="off">
+                <br>
+                <a id="cargarDatos">Cargar Datos</a>
+                <br><br>
+                <a id="reset">Borrar</a>
+            </form>        
+        </div>
+        <div class="listaClients">
+            <table id="myTable" border="1">
+                <thead>
+                    <tr>
+                        <th id="celda">Id</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Direccion</th>
+                        <th>fecha nacimiento</th>
+                        <th>telefono</th>
+                        <th>E-mail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                </table>
+        </div>
+    </div>
+</body>
+</html>

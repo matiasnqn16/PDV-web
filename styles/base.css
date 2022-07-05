@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(46, 46, 46, 0.54);
+}
+
+.head {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+.top img{
+    width: 2rem;
+    height: 2rem;
+}
+
+#laHora {
+    font-size: 2rem;
+    font-weight: bolder;
+    
+}
+
+
+#sesion {
+    font-weight: bolder;
+}
+
+#contenido{
+    background-image: url(../img/barelu.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 34%;
+    background-size:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cuadro{
+    display: flex;
+}
+
+
+#menu{
+    text-align: center;
+}
+
+#opciones ul{
+    list-style: none;
+    margin: 3em auto;
+}
+
+#menu li {
+    margin: 1em;
+}
+
+#menu a {
+    
+    padding: 5px;
+    font-size: 2rem;
+    font-weight: bolder;
+
+}
+
+
+#iniciarSesion {
+    margin-top: 4%;
+    position: absolute;
+    z-index: 3;
+    height: 60%;
+    width: 50%;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: show;
+    justify-content: center;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#ocultar {
+    display: none;
+}
+
+.buscadorylista{
+    margin: 1rem;
+    float: left;
+    width: 50%;
+    height: 82vh;
+    background-color: green;
+    border-radius: 1rem;
+}
+#buscador{
+    margin: 5px;
+    background-color: grey;
+    top: 2px;
+    border-radius: .4rem;
+    
+}
+#lista{
+    margin: 5px;
+    height: 75vh;
+    background-color: grey;
+    bottom: 2px;
+    border-radius: .3rem;
+}
+
+#lista a {
+    text-decoration: none;
+}
+
+.formulario{
+    margin: 1rem;
+    float: right;
+    width: 60%;
+    height: 82vh;
+}
+
+.formulario form {
+    width: 60%;
+    float: center;
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.5rem;
+}
+
+.formulario span {
+    float: right;
+}
+
+.formulario input{
+    float: right;
+}
+
+.logout{
+    font-size: 1.5rem;
+    background-color: blueviolet;
+    border: 2px solid black;
+    border-radius: .4rem;
+    font-weight: bolder;
+    color: rgb(80, 194, 70);
+    transition: color .4s;
+    text-decoration:none;
+}
+
+.logout:hover{
+    color: red;
+}
+
+.listado{
+    margin: .4rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+
+}
+
+.listado span{
+    float: right;
+}
+
+#fecha_sali {
+    font-size: 2rem;
+}
+
+.texto-boton {
+    font-size: 2rem;
+}

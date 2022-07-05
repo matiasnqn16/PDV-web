@@ -1,0 +1,14 @@
+.padreA {
+    margin: 1rem;
+    display: flex;
+    width: 55%;
+    height: 86vh;
+    background-color: green;
+}
+
+.filtro {
+    margin: 0.5rem;
+
+}
+
+#padreB

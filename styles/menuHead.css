@@ -1,0 +1,126 @@
+#top-menues{
+    display: flex;
+    justify-content: space-around;
+    margin: 6px auto;
+}
+
+#top-menu {
+
+    margin-top: .3rem;
+}
+
+#top-menu li{
+    display: inline;
+    padding:9px;
+    background-color:gainsboro;
+    border: 2px solid gray;
+    border-radius: .3rem;
+}
+#top-menu a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    transition: font-size .3s;
+}
+
+
+#top-menu a:hover {
+    font-size: 1.4rem;
+}
+
+#top-menu li#here {
+    background-color:rgb(169, 35, 187);
+    color: white;
+}
+
+#top-menu li#here a{
+    background-color:rgb(169, 35, 187);
+    color: white;
+}
+
+.top-izq{
+    float: left;
+}
+
+.top-izq img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.top-der{
+    float: right;
+}
+
+.tabs {
+    display: flex;
+    justify-content: left;
+    background-color: gainsboro;
+
+}
+
+.selectorTab button{
+    background-color: gainsboro;
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin: 4px;
+    padding: 4px;
+}
+
+#despachos {
+    position: absolute;
+    left: 5px;
+    z-index: 3;
+    height: 70%;
+    width: 90%;
+    background-color: gainsboro;
+    border: 2px solid #808080;
+    border-radius: 5px;
+    display: flex;
+    justify-content: left;
+    transition: z-index .5s;
+}
+
+#pedidos {
+    position: absolute;
+    left: 5px;
+    z-index: 1;
+    height: 70%;
+    width: 90%;
+    background-color: gainsboro;
+    border: 2px solid gray;
+    border-radius: 5px;
+    display: flex;
+    justify-content: left;
+    transition: z-index .5s;
+}
+
+.cardTicket {
+    width: 150px;
+    margin: 5px;
+    border: 1px solid greenyellow;
+    background-color: whitesmoke;
+}
+
+.boton {
+    background-color: beige;
+    margin: 0.2rem;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: background-color .3s;
+}
+
+.boton:hover {
+    background-color: bisque;
+    cursor: pointer;
+}
+
+#lista {
+    overflow-y: scroll;
+}
+
+#lista a {
+    cursor: pointer;
+    margin: 1rem;
+}
+

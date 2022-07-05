@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Inicio</title>
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="styles/menuHead.css">
+    <script src="./scripts/laHora.js"></script>
+    <script>
+        function loginCasero(){
+            if(document.getElementById('user').value == "qwe" && document.getElementById('contra').value == "123"){
+                alert("Eureka!")
+                document.getElementById("iniciarSesion").id = "ocultar"
+            }else{
+                alert("usuario o contraseña erroneo")
+            }
+        }
+        function logout(){
+            alert("hasta luego!")
+            document.getElementById("ocultar").id = "iniciarSesion"
+        }
+    </script>
+</head>
+<body>
+    <header class="head">
+        <div class="top" id="logoChico"><img src="./img/logobn.png" alt="logo"></div>
+        <div class="top" id="laHora">que</div>
+        <div class="top" id="sesion">DisquePDV</div>
+    </header>
+    <hr class="barraSeparadora">
+    <div id="contenido">
+        <div id="iniciarSesion">
+            <div class="formLogin">
+                <form name="formLog">
+                    <h1>Bienvenido</h1>
+                    <img src="" alt="">
+                    Usuario <br><input type="text" id="user">
+                    <br>
+                    Contraseña <br><input type="password" id="contra">
+                    <br>
+                    <button type="button" onclick="loginCasero()">ingresar</button>
+                    <button type="reset">reset</button>
+                </form>
+            </div>
+        </div>
+        <div id="seleccionarMenu">
+            <div id="opciones">
+                <ul id="menu">
+                    <li><a class="boton" href="./ventasLocal.html">Ventas Local</a></li>
+                    <li><a class="boton" href="./despachos.html">Despachos</a></li>
+                    <li><a class="boton" href="./cargaModProd.html">carga/modificacion de productos</a></li>
+                    <li><a class="boton" href="./ventasDelDia.html">ventas del dia</a></li>
+                    <li><a class="boton" href="./registroDeClientes.html">Agenda Clientes</a></li>
+                    <br>
+                    <li><a class="boton" href="#" onclick="logout()">cerrar sesion</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!-- para la hora -->
+<!-- https://norfipc.com/web/como-mostrar-fecha-hora-paginas-web-javascript.html -->
